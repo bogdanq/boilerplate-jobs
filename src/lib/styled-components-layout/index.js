@@ -18,6 +18,7 @@ export const mixins = props => css`
   order: ${prop(props.order)};
   padding: ${prop(props.padding)};
   width: ${prop(props.width)};
+  margin: ${prop(props.margin)};
 `
 
 export const Row = styled(WithTag)`

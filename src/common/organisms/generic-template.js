@@ -1,12 +1,5 @@
 import React from 'react'
-import { Container, Menu } from '../ui'
-
-const DefaultHeader = () => (
-  <Container>
-    <h1>DefaultHeader</h1>
-    <Menu />
-  </Container>
-)
+import { Container, DefaultHeader } from '../../ui'
 
 const DefaultFooter = () => (
   <Container>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { DefaultTemplate } from '../ui'
+import { DefaultTemplate } from '../../ui'
 
 export const Home = () => {
   return (

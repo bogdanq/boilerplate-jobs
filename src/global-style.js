@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import 'semantic-ui-css/semantic.min.css'
 
 export const GlobalStyles = createGlobalStyle`
   html {
