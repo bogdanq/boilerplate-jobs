@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-redux": "^7.1.1",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/styled-components": "^4.1.18",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
@@ -20,16 +25,13 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "typescript": "^3.5.3"
   }
 }
