@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, Menu } from '../index'
+import { Container, Menu } from '../'
 
 export const DefaultHeader = () => (
   <HeaderBox>
@@ -12,7 +12,6 @@ export const DefaultHeader = () => (
 )
 
 const HeaderBox = styled.div`
-  background: #111111;
   height: 700px;
 `
-const Content = () => null
+const Content = () => <h1>Content</h1>

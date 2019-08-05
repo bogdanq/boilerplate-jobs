@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { GenericTemplate } from '../../features/common/organisms/generic-template'
 
 type Props = {
-  children: ReactNode
+  children: React.ReactNode
 }
 
 export const DefaultTemplate = ({ children }: Props) => (
