@@ -3,8 +3,9 @@ import { GenericTemplate } from '../../features/common/organisms/generic-templat
 
 type Props = {
   children: React.ReactNode
+  header: React.ReactNode
 }
 
-export const DefaultTemplate = ({ children }: Props) => (
-  <GenericTemplate content={children} />
+export const DefaultTemplate = ({ children, header }: Props) => (
+  <GenericTemplate header={header} content={children} />
 )

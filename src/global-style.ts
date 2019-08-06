@@ -32,4 +32,9 @@ export const GlobalStyles = createGlobalStyle`
       consolas, monospace;
     font-variant-ligatures: contextual;
   }
+
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
 `

@@ -1,21 +1,21 @@
 import React, { ReactNode } from 'react'
-import { Container, DefaultHeader } from '../../../ui'
+import { Container } from '../../../ui'
 
-const DefaultFooter = () => (
+const Footer = () => (
   <Container>
     <h1>DefaultFooter</h1>
   </Container>
 )
 
 type Props = {
-  header?: ReactNode
+  header: ReactNode
   footer?: ReactNode
   content: ReactNode
 }
 
 export const GenericTemplate = ({
-  header = <DefaultHeader />,
-  footer = <DefaultFooter />,
+  header,
+  footer = <Footer />,
   content,
 }: Props) => {
   return (

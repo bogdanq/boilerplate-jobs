@@ -1,12 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, Menu } from '../'
+import { Container, Menu } from '../../ui'
 
-export const DefaultHeader = () => (
+type Props = {
+  content?: React.ReactNode
+}
+
+export const Header = ({ content }: Props) => (
   <HeaderBox>
     <Container>
       <Menu />
-      <Content />
+      {content}
     </Container>
   </HeaderBox>
 )
@@ -14,4 +18,3 @@ export const DefaultHeader = () => (
 const HeaderBox = styled.div`
   height: 700px;
 `
-const Content = () => <h1>Content</h1>

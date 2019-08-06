@@ -1,13 +1,16 @@
 import React from 'react'
 import { Router, Route, Switch } from 'react-router-dom'
 import { history } from './lib/history'
-import { Home } from './views/home'
+import { Home, Jobs, Summary, Private } from './views'
 
 const SettingsPage = () => <div />
 
 const routing = [
   { path: '/', component: Home },
   { path: '/settings', component: SettingsPage },
+  { path: '/jobs', component: Jobs },
+  { path: '/summary', component: Summary },
+  { path: '/private', component: Private },
 ]
 
 const RoutesWithSession = () => (
