@@ -16,5 +16,5 @@ export const Header = ({ content }: Props) => (
 )
 
 const HeaderBox = styled.div`
-  height: 700px;
+  min-height: 80px;
 `

@@ -5,7 +5,7 @@ import { DefaultTemplate } from '../../ui'
 
 export const Jobs = () => {
   return (
-    <DefaultTemplate header={<Header content={<SmallHeaderContent />} />}>
+    <DefaultTemplate header={<Header />} hero={<SmallHeaderContent />}>
       <h1>Jobs</h1>
     </DefaultTemplate>
   )

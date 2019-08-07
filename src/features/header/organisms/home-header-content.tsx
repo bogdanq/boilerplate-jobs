@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import AliceCarousel from 'react-alice-carousel'
 import header_logo from '../../../assets/jobs.jpg'
 import { Title, SubTitle } from '../../../ui/atoms'
 
@@ -10,16 +11,31 @@ type Props = {
 
 export const HomeHeaderContent = ({ title, subTitle }: Props) => {
   return (
-    <BackWrapper>
-      <Background>
-        <Title>{title}</Title>
-        <SubTitle>{subTitle}</SubTitle>
-      </Background>
-    </BackWrapper>
+    <CaruselWrapper>
+      <AliceCarousel
+        autoPlay={true}
+        buttonsDisabled={true}
+        autoPlayInterval={3000}
+        mouseDragEnabled
+      >
+        <CarouselItemBox>
+          <Background>
+            <Title>{title}</Title>
+            <SubTitle>{subTitle}</SubTitle>
+          </Background>
+        </CarouselItemBox>
+        <CarouselItemBox>
+          <Background>
+            <Title>{title} 2</Title>
+            <SubTitle>{subTitle} 2</SubTitle>
+          </Background>
+        </CarouselItemBox>
+      </AliceCarousel>
+    </CaruselWrapper>
   )
 }
 
-const BackWrapper = styled.div`
+const CarouselItemBox = styled.div`
   background-image: url(${header_logo});
   background-position: center;
   background-size: cover;
@@ -31,4 +47,10 @@ const Background = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`
+const CaruselWrapper = styled.div`
+  & ul {
+    margin: -45px 0 5px;
+    position: relative;
+  }
 `

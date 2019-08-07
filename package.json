@@ -9,6 +9,7 @@
     "@types/react-router-dom": "^4.3.4",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8.6",
+    "react-alice-carousel": "^1.15.2",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
