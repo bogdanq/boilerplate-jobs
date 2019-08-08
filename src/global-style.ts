@@ -11,8 +11,6 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.4rem;
     font-family: "Alegreya Sans", "Open Sans", sans-serif;
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -20,8 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
-    height: 100vh;
-    overflow: hidden;
+    background-color: #f5f5f5
   }
 
   tt,

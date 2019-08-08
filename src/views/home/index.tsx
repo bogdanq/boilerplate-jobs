@@ -1,22 +1,40 @@
 import React from 'react'
+import SwipeableViews from 'react-swipeable-views'
 import { Header } from '../../features/header'
 import { HomeHeaderContent } from '../../features/header/organisms'
-import { JobsList } from '../../features/jobs'
-import { DefaultTemplate, SubTitle } from '../../ui'
+import {
+  DefaultTemplate,
+  SubTitle,
+  RenderList,
+  ActionTabButtons,
+} from '../../ui'
 
 export const Home = () => {
+  const [index, setIndex] = React.useState(0)
+
   return (
     <DefaultTemplate
       header={<Header />}
       hero={<HomeHeaderContent title='Seatching job' subTitle='in one click' />}
     >
-      <h1>home</h1>
-      <JobsList
-        jobsList={List} // возможно коннект сделать в самой фиче
-        renderEmpty={() => <SubTitle>Нету списка работы</SubTitle>}
+      <ActionTabButtons
+        index={index}
+        setIndex={setIndex}
+        fields={['Список вакансий', 'Список резюме']}
       />
+      <SwipeableViews index={index}>
+        <RenderList
+          content={jobsList}
+          renderEmpty={() => <SubTitle>Нету списка вакансий</SubTitle>}
+        />
+        <RenderList
+          content={summaryList}
+          renderEmpty={() => <SubTitle>Нету списка резюме</SubTitle>}
+        />
+      </SwipeableViews>
     </DefaultTemplate>
   )
 }
 
-const List = [{ _id: 'qwdwqdqwd', title: 'title' }]
+const jobsList = [1, 2, 3, 4, 5, 6]
+const summaryList = [1, 2, 3, 4, 5, 6]
