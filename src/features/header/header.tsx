@@ -3,15 +3,10 @@ import styled from 'styled-components'
 import { Container } from 'ui'
 import { Menu } from './organisms/menu'
 
-type Props = {
-  content?: React.ReactNode
-}
-
-export const Header = ({ content }: Props) => (
+export const Header = () => (
   <HeaderBox>
     <Container>
       <Menu />
-      {content}
     </Container>
   </HeaderBox>
 )
