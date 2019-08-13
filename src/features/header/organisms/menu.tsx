@@ -1,11 +1,12 @@
 import React from 'react'
 import { Image } from 'semantic-ui-react'
 import styled from 'styled-components'
-import { Container } from '../template'
-import { ToggleMenu } from '../../lib/drop-menu'
-import logo from '../../assets/logo.png'
-import { WithAccount } from '../../features/common'
-import { MenuItem, StyledNavLink, Link, Row, DropDownMenu } from '../'
+import { ToggleMenu } from 'lib/drop-menu'
+import logo from 'assets/logo.png'
+import { WithAccount } from 'features/common'
+import { StyledNavLink, Link, Row, Container } from 'ui'
+import { MenuItem } from '../atoms/menu-item'
+import { DropDownMenu } from '../molecules/drop-down-menu'
 
 export const Menu = () => {
   return (

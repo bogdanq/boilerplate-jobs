@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from '../../assets/after.png'
-import { DropMenuItem, StyledNavLink, Col } from '../'
+import img from 'assets/after.png'
+import { DropMenuItem } from 'features/header'
+import { StyledNavLink, Col } from 'ui'
 
 type Props = {
   close: React.Dispatch<void>

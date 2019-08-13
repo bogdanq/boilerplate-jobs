@@ -1,5 +1,5 @@
 import React from 'react'
-import { GenericTemplate } from '../../features/common/organisms/generic-template'
+import { GenericTemplate } from 'features/common/organisms/generic-template'
 
 type Props = {
   children: React.ReactNode

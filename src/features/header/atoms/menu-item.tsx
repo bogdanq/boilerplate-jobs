@@ -1,8 +1,8 @@
 import React from 'react'
 import { Icon } from 'semantic-ui-react'
-import { WithTag } from '../../lib/styled-components-layout'
-import { Fields } from '../../lib/drop-menu'
-import { Container, Row } from '../'
+import { WithTag } from 'lib/styled-components-layout'
+import { Fields } from 'lib/drop-menu'
+import { Container, Row } from 'ui'
 
 type Props = {
   img: any

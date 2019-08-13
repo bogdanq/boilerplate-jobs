@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import AliceCarousel from 'react-alice-carousel'
-import header_logo from '../../../assets/jobs.jpg'
-import { Title, SubTitle } from '../../../ui/atoms'
+import header_logo from 'assets/jobs.jpg'
+import { Title, SubTitle } from 'ui/atoms'
 
 type Props = {
   title: string

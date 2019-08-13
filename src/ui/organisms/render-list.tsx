@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { ConditionalList } from './conditional-list'
-import { RenderListItem } from '../molecules'
+import { RenderListItem } from 'ui'
 
 // type JobsItem = {
 //   _id: string

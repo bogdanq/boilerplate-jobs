@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
-import { Row, Container } from '../../ui'
+import { Row, Container } from 'ui'
 
 type Props = {
   index: number
@@ -8,7 +8,7 @@ type Props = {
   setIndex: (id: number) => void
 }
 
-export const ActionTabButtons = ({ index, setIndex, fields }: Props) => {
+export const DefaultTabButtons = ({ index, setIndex, fields }: Props) => {
   return (
     <TabContainerBox>
       <Row>

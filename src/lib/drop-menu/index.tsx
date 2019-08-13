@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import useOnClickOutside from 'use-onclickoutside'
-import { MenuItem } from '../../ui'
+import { MenuItem } from 'features/header'
 
 export type Fields = 'div' | 'span' | 'ul'
 
