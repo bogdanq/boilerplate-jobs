@@ -3,16 +3,17 @@ import { RenderList, SubTitle, CenterContentTemplate } from 'ui'
 
 type Props = {
   viewAll?: React.ReactNode
+  pagination?: boolean
 }
 
-export const SummaryList = ({ viewAll }: Props) => {
+export const SummaryList = ({ viewAll, pagination }: Props) => {
   return (
     <>
       <CenterContentTemplate>
         <RenderList
           content={summaryList}
           renderEmpty={() => <SubTitle>Нету списка резюме</SubTitle>}
-          landing={true}
+          pagination={pagination}
         />
       </CenterContentTemplate>
       {viewAll}

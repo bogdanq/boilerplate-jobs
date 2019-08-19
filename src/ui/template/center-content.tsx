@@ -1,14 +1,12 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 type Props = {
   children: React.ReactNode
 }
 
 export const CenterContentTemplate = ({ children }: Props) => (
-  <CenterContent>
-    {children}
-  </CenterContent>
+  <CenterContent>{children}</CenterContent>
 )
 
 export const CenterContent = styled.main`
@@ -18,5 +16,6 @@ export const CenterContent = styled.main`
   border-radius: 20px;
   height: auto;
   background: #fff;
+  margin-bottom: 0;
   cursor: pointer;
 `

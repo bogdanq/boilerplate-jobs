@@ -1,11 +1,14 @@
 import React from 'react'
-import { Container } from '../../../ui'
+import styled from 'styled-components'
+import { Container } from 'ui'
 import { Header } from 'features/header'
 
 const Footer = () => (
-  <Container>
-    <h1>DefaultFooter</h1>
-  </Container>
+  <FooterWrapper>
+    <Container>
+      <h1>DefaultFooter</h1>
+    </Container>
+  </FooterWrapper>
 )
 
 type Props = {
@@ -13,10 +16,7 @@ type Props = {
   children: React.ReactNode
 }
 
-export const GenericTemplate = ({
-  children,
-  hero,
-}: Props) => {
+export const GenericTemplate = ({ children, hero }: Props) => {
   return (
     <Container>
       <Header />
@@ -26,3 +26,10 @@ export const GenericTemplate = ({
     </Container>
   )
 }
+
+const FooterWrapper = styled.div`
+  background: #111111;
+  height: 300px;
+  color: #fff;
+  margin-top: 50px;
+`

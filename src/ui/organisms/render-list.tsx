@@ -10,10 +10,10 @@ import { RenderListItem } from 'ui'
 type Props = {
   content: Array<any>
   renderEmpty?: () => React.ReactNode
-  landing?: boolean
+  pagination?: boolean
 }
 
-export const RenderList = ({ renderEmpty, content, landing }: Props) => {
+export const RenderList = ({ renderEmpty, content, pagination }: Props) => {
   return (
     <>
       <ConditionalList
@@ -27,8 +27,8 @@ export const RenderList = ({ renderEmpty, content, landing }: Props) => {
             ))}
           </>
         )}
-        />
-        {!landing && <h1>Pagination</h1>}
-      </>
+      />
+      {pagination && <h1 style={{ marginBottom: '50px' }}>Pagination</h1>}
+    </>
   )
 }
