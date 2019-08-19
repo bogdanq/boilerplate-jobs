@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { ConditionalList } from './conditional-list'
 import { RenderListItem } from 'ui'
 
@@ -11,32 +10,25 @@ import { RenderListItem } from 'ui'
 type Props = {
   content: Array<any>
   renderEmpty?: () => React.ReactNode
+  landing?: boolean
 }
 
-export const RenderList = ({ renderEmpty, content }: Props) => {
+export const RenderList = ({ renderEmpty, content, landing }: Props) => {
   return (
-    <ConditionalListBox>
+    <>
       <ConditionalList
         list={content}
         renderEmpty={renderEmpty}
         renderExists={list => (
           <>
             {list.map((item: any) => (
-              <RenderListItem item={item} key={item._id} />
+              <RenderListItem item={item} key={item} />
+              // <RenderListItem item={item} key={item._id} />
             ))}
           </>
         )}
-      />
-    </ConditionalListBox>
+        />
+        {!landing && <h1>Pagination</h1>}
+      </>
   )
 }
-
-const ConditionalListBox = styled.div`
-  margin: 10px auto;
-  margin-top: 20px;
-  width: 1000px;
-  border-radius: 20px;
-  height: 650px;
-  background: #fff;
-  cursor: pointer;
-`

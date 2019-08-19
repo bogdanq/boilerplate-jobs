@@ -1,12 +1,22 @@
 import React from 'react'
-import { RenderList, SubTitle } from 'ui'
+import { RenderList, SubTitle, CenterContentTemplate } from 'ui'
 
-export const SummaryList = () => {
+type Props = {
+  viewAll?: React.ReactNode
+}
+
+export const SummaryList = ({ viewAll }: Props) => {
   return (
-    <RenderList
-      content={summaryList}
-      renderEmpty={() => <SubTitle>Нету списка резюме</SubTitle>}
-    />
+    <>
+      <CenterContentTemplate>
+        <RenderList
+          content={summaryList}
+          renderEmpty={() => <SubTitle>Нету списка резюме</SubTitle>}
+          landing={true}
+        />
+      </CenterContentTemplate>
+      {viewAll}
+    </>
   )
 }
 const summaryList = [1, 2, 3, 4, 5, 6]

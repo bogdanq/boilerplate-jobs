@@ -9,7 +9,7 @@ type MapProps = {
 
 type Props = {
   buttons: Array<MapProps>
-  tabs: Array<React.ComponentType>
+  tabs: Array<any>
 }
 
 export const Tabs = ({ tabs, buttons }: Props) => {
@@ -30,7 +30,7 @@ export const Tabs = ({ tabs, buttons }: Props) => {
       </TabButtonsWrapper>
       <SwipeableViews index={index}>
         {tabs.map((TabContent, id) => (
-          <TabContent key={id} />
+          <TabContent key={id}/>
         ))}
       </SwipeableViews>
     </>

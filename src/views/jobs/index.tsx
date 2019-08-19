@@ -1,12 +1,13 @@
 import React from 'react'
-import { Header } from '../../features/header'
-import { SmallHeaderContent } from '../../features/header/organisms'
-import { DefaultTemplate } from '../../ui'
+import { SmallHeaderContent } from 'features/header/organisms'
+import { MainTemplate } from 'ui'
+import { JobsList } from 'features/jobs';
 
 export const Jobs = () => {
   return (
-    <DefaultTemplate header={<Header />} hero={<SmallHeaderContent />}>
+    <MainTemplate hero={<SmallHeaderContent />}>
       <h1>Jobs</h1>
-    </DefaultTemplate>
+      <JobsList />
+    </MainTemplate>
   )
 }

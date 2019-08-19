@@ -1,10 +1,10 @@
 import React from 'react'
-import { DefaultTemplate } from '../../ui'
+import { MainTemplate } from '../../ui'
 
 export const Private = () => {
   return (
-    <DefaultTemplate header={() => null}>
+    <MainTemplate>
       <h1>Private</h1>
-    </DefaultTemplate>
+    </MainTemplate>
   )
 }

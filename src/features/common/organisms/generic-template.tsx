@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from '../../../ui'
+import { Header } from 'features/header'
 
 const Footer = () => (
   <Container>
@@ -8,24 +9,20 @@ const Footer = () => (
 )
 
 type Props = {
-  header: React.ReactNode
   hero: React.ReactNode
-  footer?: React.ReactNode
-  content: React.ReactNode
+  children: React.ReactNode
 }
 
 export const GenericTemplate = ({
-  header,
-  footer = <Footer />,
-  content,
+  children,
   hero,
 }: Props) => {
   return (
     <Container>
-      {header}
+      <Header />
       {hero}
-      {content}
-      {footer}
+      {children}
+      <Footer />
     </Container>
   )
 }

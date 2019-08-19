@@ -9,7 +9,7 @@ type Props = {
   subTitle: string
 }
 
-export const HomeHeaderContent = ({ title, subTitle }: Props) => {
+export const HomeHero = ({ title, subTitle }: Props) => {
   return (
     <CaruselWrapper>
       <AliceCarousel
