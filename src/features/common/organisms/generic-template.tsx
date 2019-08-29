@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Container } from 'ui'
 import { Header } from 'features/header'
+import { Chat } from 'features/chat'
 
 const Footer = () => (
   <FooterWrapper>
@@ -22,6 +23,7 @@ export const GenericTemplate = ({ children, hero }: Props) => {
       <Header />
       {hero}
       {children}
+      <Chat />
       <Footer />
     </Container>
   )
